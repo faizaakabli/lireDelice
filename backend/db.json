@@ -1,64 +1,67 @@
 {
-    "livre": [
-        {
-            "id": 1,
-            "titre": "Harry Potter",
-            "genre": "Fantastique",
-            "prix": "12 €",
-            "idAuteur": 4
-        },
-        {
-            "id": 2,
-            "titre": "Le petit prince",
-            "genre": "Enfant",
-            "prix": "8 €",
-            "idAuteur": 3
-        }
-        ,
-        {
-            "id": 3,
-            "titre": "Les Misérables",
-            "genre": "Roman",
-            "prix": "8 €",
-            "idAuteur": 2
-        }
-        ,
-        {
-            "id": 4,
-            "titre": "1984",
-            "genre": "Science-Fiction",
-            "prix": "10 €",
-            "idAuteur": 1
-        }
-    ],
-    "auteur": [
-        {
-            "id": 1,
-            "nom": "George Orwell"
-        },
-        {
-            "id": 2,
-            "nom": "Victor Hugo"
-        },
-        {
-            "id": 3,
-            "nom": "Antoine de Saint-Exupéry"
-        },
-        {
-            "id": 4,
-            "nom": "J. K. Rowling"
-        }
-    ],
-    "users": [
-        {
-            "id": 1,
-            "username": "admin",
-            "password": "admin"
-        },
-        {
-            "id": 2,
-            "username": "login",
-            "password": "login"
-        }
-    ]
+  "livre": [
+    {
+      "id": 1,
+      "titre": "Harry Potter",
+      "genre": "Fantastique",
+      "prix": "12 €",
+      "idAuteur": 4
+    },
+    {
+      "id": 2,
+      "titre": "Le petit prince",
+      "genre": "Enfant",
+      "prix": "8 €",
+      "idAuteur": 3
+    },
+    {
+      "id": 3,
+      "titre": "Les Misérables",
+      "genre": "Roman",
+      "prix": "8 €",
+      "idAuteur": 2
+    },
+    {
+      "id": 4,
+      "titre": "1984",
+      "genre": "Science-Fiction",
+      "prix": "10 €",
+      "idAuteur": 1
+    }
+  ],
+  "auteur": [
+    {
+      "id": 1,
+      "nom": "George Orwell"
+    },
+    {
+      "id": 2,
+      "nom": "Victor Hugo"
+    },
+    {
+      "id": 3,
+      "nom": "Antoine de Saint-Exupéry"
+    },
+    {
+      "id": 4,
+      "nom": "J. K. Rowling"
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "username": "admin",
+      "password": "admin"
+    },
+    {
+      "id": 2,
+      "username": "login",
+      "password": "login"
+    },
+    {
+      "username": "admin",
+      "password": "admin",
+      "id": 3
+    }
+  ]
 }
