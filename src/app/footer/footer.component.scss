@@ -1,0 +1,14 @@
+.footer {
+  background-color: #1F2937; /* Remplacez par la couleur de fond correspondante à bg-slate-800 */
+  color: #F3F4F6; /* Remplacez par la couleur de texte correspondante à text-slate-50 */
+  padding: 1rem; /* Remplacez par la valeur correspondante à p-4 */
+
+  a {
+    color: #8B5CF6; /* Remplacez par la couleur de texte correspondante à text-violet-300 */
+    transition: color 0.2s ease; /* Ajoutez une transition pour l'effet hover */
+
+    &:hover {
+      color: #9333EA; /* Remplacez par la couleur de texte correspondante à hover:text-violet-500 */
+    }
+  }
+}

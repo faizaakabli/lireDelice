@@ -49,7 +49,7 @@
             "nom": "J. K. Rowling"
         }
     ],
-    "user": [
+    "users": [
         {
             "id": 1,
             "username": "admin",

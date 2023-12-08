@@ -1,0 +1,44 @@
+.login {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  gap: 8rem;
+
+  &_form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 8rem;
+    width: 100%;
+
+    h2 {
+      font-size: 1.5rem;
+      font-weight: bold;
+      margin-bottom: 1rem;
+    }
+  }
+
+  &_form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 8rem;
+    width: 100%;
+
+    .input {
+      width: 100%;
+    }
+  }
+
+  &_register-link {
+    color: #8B5CF6;
+    font-weight: bold;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
