@@ -1,4 +1,9 @@
 <section class="home">
-  <h2 class="home_title">Lire Délice</h2>
-  <p class="home_presentation">Le book Shop en ligne</p>
+  <div *ngFor="let book of books">
+  <img src="{{ book.image }}" />
+    <h2>{{ book.titre }}</h2>
+    <p>{{ book.genre }}</p>
+    <p>{{ book.prix }}</p>
+    <button>Afficher les détails</button> {# tu récupères l'id du livre avec {{book.id}} dans l'appel pour la page des détails#}
+  </div>
 </section>

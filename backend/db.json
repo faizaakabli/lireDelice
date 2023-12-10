@@ -5,28 +5,32 @@
       "titre": "Harry Potter",
       "genre": "Fantastique",
       "prix": "12 €",
-      "idAuteur": 4
+      "idAuteur": 4,
+      "image": "assets/livreImages/harrypotter.jpg"
     },
     {
       "id": 2,
       "titre": "Le petit prince",
       "genre": "Enfant",
       "prix": "8 €",
-      "idAuteur": 3
+      "idAuteur": 3,
+      "image": "assets/livreImages/lepetitprince.jpg"
     },
     {
       "id": 3,
       "titre": "Les Misérables",
       "genre": "Roman",
       "prix": "8 €",
-      "idAuteur": 2
+      "idAuteur": 2,
+      "image": "assets/livreImages/lesmiserables.jpg"
     },
     {
       "id": 4,
       "titre": "1984",
       "genre": "Science-Fiction",
       "prix": "10 €",
-      "idAuteur": 1
+      "idAuteur": 1,
+      "image": "assets/livreImages/1984.jpg"
     }
   ],
   "auteur": [
