@@ -1,5 +1,7 @@
+<app-search-bar (searchEvent)="performSearch($event)">
+</app-search-bar>
 <section class="home">
-  <div *ngFor="let book of books">
+  <div *ngFor="let book of filteredBooks">
     <img src="{{ book.image }}" />
     <h2>{{ book.titre }}</h2>
     <p>{{ book.genre }}</p>

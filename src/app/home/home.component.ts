@@ -11,6 +11,7 @@ import { HomeService } from './home.service';
 
 export class HomeComponent implements OnInit {
   books: any[] = [];
+  filteredBooks: any[] = [];
 
   constructor(private router: Router, private authService: AuthService, private homeService: HomeService) { }
 
@@ -22,6 +23,12 @@ export class HomeComponent implements OnInit {
       error => {
         console.error('Error fetching books:', error);
       }
+    );
+  }
+
+  performSearch(searchTerm: string) {
+    this.filteredBooks = this.books.filter(book =>
+      book.titre.toLowerCase().includes(searchTerm.toLowerCase()) 
     );
   }
 }
