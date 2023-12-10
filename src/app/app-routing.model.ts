@@ -8,8 +8,8 @@ import { HomeComponent } from "./home/home.component";
 const routes: Routes = [
   
   {
-    path: 'home',
-    component : HomeComponent
+    path: '',
+    component : LoginComponent
   },
   {
     path: 'login',
@@ -18,7 +18,11 @@ const routes: Routes = [
   {
     path: 'register',
     component: RegisterComponent
-  }
+  },
+  {
+    path: 'home',
+    component : HomeComponent
+  },
 
 ];
 

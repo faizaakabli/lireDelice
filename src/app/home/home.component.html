@@ -1,9 +1,10 @@
 <section class="home">
   <div *ngFor="let book of books">
-  <img src="{{ book.image }}" />
+    <img src="{{ book.image }}" />
     <h2>{{ book.titre }}</h2>
     <p>{{ book.genre }}</p>
     <p>{{ book.prix }}</p>
-    <button>Afficher les détails</button> {# tu récupères l'id du livre avec {{book.id}} dans l'appel pour la page des détails#}
+    <button>Afficher les détails</button> 
+    <!-- {# tu récupères l'id du livre avec {{book.id}} dans l'appel pour la page des détails#} -->
   </div>
 </section>
