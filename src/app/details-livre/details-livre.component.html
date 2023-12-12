@@ -1,0 +1,14 @@
+<section class="details" *ngIf="livre">
+    <div class="details-content">
+      <img src="{{ livre.image }}" />
+      <div>
+        <h2>{{ livre.titre }}</h2>
+        <p>{{ livre.auteur }}</p>
+        <p>{{ livre.genre }}</p>
+        <p>{{ livre.prix }}</p>
+        <p>{{ livre.description }}</p>
+        <p>{{ livre.resume }}</p>
+        <a (click)="retourALaListeDesLivres()">Retour à la liste des livres</a>
+      </div>
+    </div>
+  </section>

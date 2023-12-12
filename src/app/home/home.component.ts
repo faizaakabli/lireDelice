@@ -14,11 +14,11 @@ export class HomeComponent implements OnInit {
   filteredBooks: any[] = [];
 
   constructor(private router: Router, private authService: AuthService, private homeService: HomeService) { }
-
   ngOnInit(): void {
     this.homeService.getBooks().subscribe(
       (data: any[]) => {
         this.books = data;
+        this.filteredBooks = data;
       },
       error => {
         console.error('Error fetching books:', error);

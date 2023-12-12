@@ -6,7 +6,7 @@
     <h2>{{ book.titre }}</h2>
     <p>{{ book.genre }}</p>
     <p>{{ book.prix }}</p>
-    <button>Afficher les détails</button> 
+    <a [routerLink]="['/livre',book.id]">Afficher les détails</a>
     <!-- {# tu récupères l'id du livre avec {{book.id}} dans l'appel pour la page des détails#} -->
   </div>
 </section>
