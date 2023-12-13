@@ -10,6 +10,7 @@ import { LoginComponent } from './auth/login/login.component';
 import { RegisterComponent } from './auth/register/register.component';
 import { HomeComponent } from './home/home.component';
 import { SearchBarComponent } from './search-bar/search-bar.component';
+import { CartComponent } from './cart/cart.component';
 
 @NgModule({
   declarations: [
@@ -20,6 +21,7 @@ import { SearchBarComponent } from './search-bar/search-bar.component';
     RegisterComponent,
     HomeComponent,
     SearchBarComponent,
+    CartComponent
 
   ],
   imports: [

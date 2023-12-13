@@ -1,24 +1,41 @@
 .header {
-  background-color: #8B5CF6;
-  color: #ffffff;
-  padding: 1rem;
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
 
-  h1 {
-    font-size: 1.5rem;
-    font-weight: bold;
-  }
+.header h1 {
+  font-size: 20px;
+  margin: 0;
+}
 
-  &_user {
-    display: flex;
-    align-items: center;
+.header h1 a {
+  text-decoration: none;
+  color: #fff;
+}
 
-    h2 {
-      font-size: 1rem;
-      font-weight: bold;
-      margin-right: 0.5rem;
-    }
-  }
+.header_user {
+  display: flex;
+  align-items: center;
+}
+
+.header_user h2 {
+  font-size: 14px;
+  margin-right: 5px;
+}
+
+.btn-secondary {
+  background-color: #4285f4;
+  color: #fff;
+  border: none;
+  padding: 6px 12px;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.btn-secondary:hover {
+  background-color: #3367d6;
 }

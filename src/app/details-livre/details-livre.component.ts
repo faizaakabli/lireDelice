@@ -2,6 +2,7 @@ import { Component , OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ActivatedRoute , Router } from '@angular/router';
 import { LivreService } from '../shared/services/livre.service';
+import { CartService } from '../shared/services/cart.service';
 
 @Component({
   selector: 'app-details-livre',
@@ -14,7 +15,7 @@ import { LivreService } from '../shared/services/livre.service';
 export class DetailsLivreComponent implements OnInit {
   livreId: string = '';
   livre: any;
-  constructor(private route : ActivatedRoute, private livreService: LivreService , private router: Router){}
+  constructor(private route : ActivatedRoute, private livreService: LivreService , private router: Router,private cartService: CartService){}
 
   ngOnInit() {
     this.route.params.subscribe(params => {
@@ -32,6 +33,11 @@ export class DetailsLivreComponent implements OnInit {
         console.error('Erreur lors du chargement des détails du livre :', error);
       }
     );
+  }
+
+  addToCart(book: any) {
+    this.cartService.addToCart(book);
+    this.router.navigate(['/home']);
   }
 
   retourALaListeDesLivres(){

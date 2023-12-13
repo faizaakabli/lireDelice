@@ -8,7 +8,8 @@
         <p>{{ livre.prix }}</p>
         <p>{{ livre.description }}</p>
         <p>{{ livre.resume }}</p>
+        <button (click)="addToCart(livre)">Ajouter au Panier</button>
         <a (click)="retourALaListeDesLivres()">Retour à la liste des livres</a>
       </div>
     </div>
-  </section>
+</section>
