@@ -1,5 +1,8 @@
 <app-search-bar (searchEvent)="performSearch($event)">
 </app-search-bar>
+
+<button (click)="sortBooks()">Trier par prix croissant/décroissant</button>
+
 <section class="home">
   <div *ngFor="let book of filteredBooks">
     <img src="{{ book.image }}" />
