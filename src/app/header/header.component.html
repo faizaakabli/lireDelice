@@ -4,7 +4,8 @@
   </h1>
   <div class="header_user">
     <h2>Bonjour {{ getUsername }}</h2>
-    <button *ngIf="!isUserConnected; else logoutTemplate" class="btn-secondary" routerLink="/login">Se connecter</button>
+    <button *ngIf="!isUserConnected; else logoutTemplate" class="btn-secondary" routerLink="/login">Se
+      connecter</button>
     <ng-template #logoutTemplate>
       <button class="btn-secondary" (click)="logout()" routerLink="/login">Se déconnecter</button>
     </ng-template>
