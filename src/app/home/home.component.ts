@@ -14,6 +14,7 @@ export class HomeComponent implements OnInit {
   books: any[] = [];
   filteredBooks: any[] = [];
   sortDirection: 'asc' | 'desc' = 'asc';
+  selectedGenre: string | null = null; // Ajoutez une propriété pour suivre le genre sélectionné
 
   constructor(private router: Router, private authService: AuthService, private homeService: HomeService, private cartService: CartService) { }
   ngOnInit(): void {
@@ -50,5 +51,17 @@ export class HomeComponent implements OnInit {
 
     // Inverser la direction du tri pour le prochain clic
     this.sortDirection = this.sortDirection === 'asc' ? 'desc' : 'asc';
+  }
+
+  filterByGenre(genre: string | null) {
+    this.selectedGenre = genre;
+    this.applyGenreFilter();
+  }
+
+  applyGenreFilter() {
+    // Filtrer par genre si un genre est sélectionné, sinon afficher tous les livres
+    this.filteredBooks = this.selectedGenre
+      ? this.books.filter(book => book.genre.toLowerCase() === this.selectedGenre?.toLowerCase())
+      : this.books;
   }
 }

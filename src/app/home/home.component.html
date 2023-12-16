@@ -15,7 +15,18 @@
   </button>
 </div>
 
+
+
 <section class="home">
+  <div class="filters">
+    <p>Rechercher par genre</p>
+    <button (click)="filterByGenre('Fantastique')">Fantastique</button>
+    <button (click)="filterByGenre('Enfant')">Enfant</button>
+    <button (click)="filterByGenre('Roman')">Roman</button>
+    <button (click)="filterByGenre('Science-Fiction')">Science-Fiction</button>
+    <button (click)="filterByGenre(null)">Tous les genres</button>
+  
+  </div>
   <div *ngFor="let book of filteredBooks">
     <img src="{{ book.image }}" />
     <h2>{{ book.titre }}</h2>
