@@ -1,7 +1,19 @@
+<div class="entete">
+  <h1>Catalogue de livres</h1>
+</div>
+
+<!-- search bar -->
 <app-search-bar (searchEvent)="performSearch($event)">
 </app-search-bar>
 
-<button (click)="sortBooks()">Trier par prix croissant/décroissant</button>
+<!-- button sort -->
+<div class="trie">
+  <button (click)="sortBooks()">
+    Trier par prix
+    <span *ngIf="sortDirection === 'asc'">&#9650;</span>
+    <span *ngIf="sortDirection === 'desc'">&#9660;</span>
+  </button>
+</div>
 
 <section class="home">
   <div *ngFor="let book of filteredBooks">
@@ -10,6 +22,5 @@
     <p>{{ book.genre }}</p>
     <p>{{ book.prix }}</p>
     <a [routerLink]="['/livre',book.id]">Afficher les détails</a>
-    <!-- {# tu récupères l'id du livre avec {{book.id}} dans l'appel pour la page des détails#} -->
   </div>
 </section>

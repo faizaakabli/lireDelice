@@ -44,7 +44,8 @@
   width: 200px;
 }
 
-button {
+/* home.component.css */
+.trie button {
   background-color: #3498db;
   color: #ffffff;
   border: none;
@@ -54,4 +55,18 @@ button {
   border-radius: 5px;
   transition: background-color 0.3s;
   margin-bottom: 10px;
+  margin-left: 90%;
+}
+
+.trie button:hover {
+  background-color: #2980b9;
+}
+
+.trie span {
+  font-size: 12px;
+  margin-left: 5px;
+}
+
+.entete h1{
+  text-align: center;
 }
