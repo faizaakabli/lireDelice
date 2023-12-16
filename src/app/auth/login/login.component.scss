@@ -1,44 +1,63 @@
+/* login.component.scss (ou login.component.css si vous n'utilisez pas SCSS) */
+
 .login {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  width: 100%;
-  gap: 8rem;
+  margin-top: 50px;
+}
 
-  &_form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 8rem;
-    width: 100%;
+.login_form {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 300px;
+  text-align: center;
+}
 
-    h2 {
-      font-size: 1.5rem;
-      font-weight: bold;
-      margin-bottom: 1rem;
-    }
-  }
+.login h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
 
-  &_form-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 8rem;
-    width: 100%;
+.login_form-container {
+  margin-bottom: 20px;
+}
 
-    .input {
-      width: 20%;
-    }
-  }
+.input {
+  width: 200px;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+}
 
-  &_register-link {
-    color: rgb(246, 179, 92);
-    font-weight: bold;
-    &:hover {
-      text-decoration: underline;
-    }
-  }
+.btn {
+  background-color: #4285f4;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.btn:hover {
+  background-color: #3367d6;
+}
+
+.message {
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+.login_register-link {
+  color: #4285f4;
+  text-decoration: none;
+}
+
+.login_register-link:hover {
+  text-decoration: underline;
 }
