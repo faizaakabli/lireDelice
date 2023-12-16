@@ -4,7 +4,7 @@
       "id": 1,
       "titre": "Harry Potter",
       "genre": "Fantastique",
-      "prix": "12 €",
+      "prix": "12",
       "idAuteur": 4,
       "image": "assets/livreImages/harrypotter.jpg",
       "resume": "Harry Potter, un jeune orphelin, est élevé par son oncle et sa tante qui le détestent. Alors qu'il était haut comme trois pommes, ces derniers lui ont raconté que ses parents étaient morts dans un accident de voiture. Le jour de son onzième anniversaire, Harry reçoit la visite inattendue d'un homme gigantesque se nommant Rubeus Hagrid, et celui-ci lui révèle qu'il est en fait le fils de deux puissants magiciens et qu'il possède lui aussi d'extraordinaires pouvoirs."
@@ -13,16 +13,16 @@
       "id": 2,
       "titre": "Le petit prince",
       "genre": "Enfant",
-      "prix": "8 €",
+      "prix": "8",
       "idAuteur": 3,
       "image": "assets/livreImages/lepetitprince.jpg",
-      "resume":"C'est un petit garçon qui vit seul sur une planète lointaine. Amoureux d'une rose très capricieuse, il part en voyage sur d'autres planètes à la recherche d'amis. Il croise différents personnages : un homme d'affaires, un roi, un géographe, un renard… qui vont tous lui apprendre quelque chose..."
+      "resume": "C'est un petit garçon qui vit seul sur une planète lointaine. Amoureux d'une rose très capricieuse, il part en voyage sur d'autres planètes à la recherche d'amis. Il croise différents personnages : un homme d'affaires, un roi, un géographe, un renard… qui vont tous lui apprendre quelque chose..."
     },
     {
       "id": 3,
       "titre": "Les Misérables",
       "genre": "Roman",
-      "prix": "8 €",
+      "prix": "8",
       "idAuteur": 2,
       "image": "assets/livreImages/lesmiserables.jpg",
       "resume": "Les Misérables retrace le destin de Jean Valjean, ancien forçat condamné pour le vol d'un morceau de pain. Au fil de son histoire, le roman fait des détours pour se concentrer sur d'autres personnages, comme Fantine ou Marius."
@@ -31,7 +31,7 @@
       "id": 4,
       "titre": "1984",
       "genre": "Science-Fiction",
-      "prix": "10 €",
+      "prix": "10",
       "idAuteur": 1,
       "image": "assets/livreImages/1984.jpg",
       "resume": "Manipulant et contrôlant les moindres détails de la vie de ses sujets, Big Brother est le chef spirituel d'Oceania, l'un des trois Etats dont la capitale est Londres. Le bureaucrate Winston Smith travaille dans l'un des départements. Mais un jour il tombe amoureux de Julia, ce qui est un crime."
@@ -70,6 +70,36 @@
       "username": "admin",
       "password": "admin",
       "id": 3
+    },
+    {
+      "username": "admin",
+      "password": "admin",
+      "id": 4
+    },
+    {
+      "username": "admin",
+      "password": "admin",
+      "id": 5
+    },
+    {
+      "username": "admin",
+      "password": "admin",
+      "id": 6
+    },
+    {
+      "username": "admin",
+      "password": "admin",
+      "id": 7
+    },
+    {
+      "username": "aaaa",
+      "password": "admin123",
+      "id": 8
+    },
+    {
+      "username": "admin",
+      "password": "admin",
+      "id": 9
     }
   ]
 }

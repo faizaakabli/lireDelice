@@ -31,7 +31,7 @@
     <img src="{{ book.image }}" />
     <h2>{{ book.titre }}</h2>
     <p>{{ book.genre }}</p>
-    <p>{{ book.prix }}</p>
+    <p>{{ book.prix | priceFormat }}</p>
     <a [routerLink]="['/livre',book.id]">Afficher les détails</a>
   </div>
 </section>

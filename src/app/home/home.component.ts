@@ -60,8 +60,12 @@ export class HomeComponent implements OnInit {
 
   applyGenreFilter() {
     // Filtrer par genre si un genre est sélectionné, sinon afficher tous les livres
-    this.filteredBooks = this.selectedGenre
-      ? this.books.filter(book => book.genre.toLowerCase() === this.selectedGenre?.toLowerCase())
-      : this.books;
+    this.filteredBooks = [];
+  
+    if (this.selectedGenre) {
+      this.filteredBooks = this.books.filter(book => book.genre.toLowerCase() === this.selectedGenre?.toLowerCase());
+    } else {
+      this.filteredBooks = [...this.books]; // Si aucun genre n'est sélectionné, copiez tous les livres
+    }
   }
 }

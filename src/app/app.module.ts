@@ -11,6 +11,8 @@ import { RegisterComponent } from './auth/register/register.component';
 import { HomeComponent } from './home/home.component';
 import { SearchBarComponent } from './search-bar/search-bar.component';
 import { CartComponent } from './cart/cart.component';
+import { PriceFormatPipe } from './home/price-format.pipe';
+import { HoverHighlightDirective } from './auth/hover-highlight.directive';
 
 @NgModule({
   declarations: [
@@ -21,7 +23,9 @@ import { CartComponent } from './cart/cart.component';
     RegisterComponent,
     HomeComponent,
     SearchBarComponent,
-    CartComponent
+    CartComponent,
+    PriceFormatPipe,
+    HoverHighlightDirective,
 
   ],
   imports: [
