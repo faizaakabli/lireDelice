@@ -18,4 +18,8 @@ export class CartService {
   getTotal() {
     return this.items.reduce((total, book) => total + parseFloat(book.prix), 0).toFixed(2);
   }
+
+  removeFromCart(index: number): void {
+    this.items.splice(index, 1);
+  }
 }

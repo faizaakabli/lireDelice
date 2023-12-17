@@ -1,7 +1,7 @@
 <div class="entete">
   <h1>Catalogue de livres</h1>
 </div>
-
+<app-cart></app-cart>
 <!-- search bar -->
 <app-search-bar (searchEvent)="performSearch($event)">
 </app-search-bar>
@@ -15,8 +15,6 @@
   </button>
 </div>
 
-
-
 <section class="home">
   <div class="filters">
     <p>Rechercher par genre</p>
@@ -25,7 +23,6 @@
     <button (click)="filterByGenre('Roman')">Roman</button>
     <button (click)="filterByGenre('Science-Fiction')">Science-Fiction</button>
     <button (click)="filterByGenre(null)">Tous les genres</button>
-  
   </div>
   <div *ngFor="let book of filteredBooks">
     <img src="{{ book.image }}" />

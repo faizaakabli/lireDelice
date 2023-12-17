@@ -21,4 +21,16 @@ export class CartComponent implements OnInit {
   calculateTotal() {
     this.total = this.cartService.getTotal();
   }
+
+  loadCart(): void {
+    this.cartItems = this.cartService.getCartItems();
+    this.calculateTotal();
+  }
+
+
+  removeFromCart(index: number): void {
+    this.cartService.removeFromCart(index);
+    this.loadCart(); // Rechargez le panier après la suppression
+  }
+
 }

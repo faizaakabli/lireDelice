@@ -1,7 +1,10 @@
 <section class="cart">
-    <h2>Panier</h2>
-    <div *ngFor="let item of cartService.getCartItems()">
-      <p>{{ item.titre }} - {{ item.prix }}</p>
+  <h2>Panier</h2>
+  <div *ngFor="let item of cartService.getCartItems(); let i = index">
+    <div>
+      <p>{{ item.titre }} - {{ item.prix }} €</p>
+      <button (click)="removeFromCart(i)">Supprimer le livre du panier</button>
     </div>
-    <p>Total : {{ cartService.getTotal() }} €</p>
+  </div>
+  <p>Total : {{ cartService.getTotal() }} €</p>
 </section>
